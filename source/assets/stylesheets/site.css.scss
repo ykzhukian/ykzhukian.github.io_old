@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "normalize";
+@import "variable";
+
+/* Regular
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "regular/font";
+@import "regular/font_size";
+@import "regular/general";
+@import "regular/margin";
+@import "regular/size";
+@import "regular/flex";
+
+
+
+.line {
+  border-top: 1px solid $main-color;
+  width: 100%;
+  border-radius: 2px;
+}
+
+
+
+// .welcome {
+//   -webkit-animation-name: welcome;
+//   -webkit-animation-duration: .9s;
+// }
+
+// @-webkit-keyframes welcome {
+//   from {
+//     -webkit-transform: scale(0);
+//     opacity: 0;
+//   }
+//   50% {
+//    -webkit-transform: scale(0);
+//    opacity: 0;
+//   }
+//   82.5% {
+//     -webkit-transform: scale(1.03);
+//     -webkit-animation-timing-function: ease-out;
+//     opacity: 1;
+//   }
+//   to {
+//     -webkit-transform: scale(1);
+//   }
+// }

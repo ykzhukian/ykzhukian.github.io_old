@@ -1,0 +1,36 @@
+/* Ahkio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: "Ahkio";
+  src: url("../fonts/ahkio/ahkio-webfont.eot") format("eot"),
+       url("../fonts/ahkio/ahkio-webfont.woff") format("woff"),
+       url("../fonts/ahkio/ahkio-webfont.ttf") format("truetype"),
+       url("../fonts/ahkio/ahkio-webfont.svg") format("svg"),
+       url("../fonts/ahkio/ahkio.ttf") format("truetype");
+}
+
+.ahkio { font-family: $font-ahkio; }
+
+/* Junction
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: "Junction";
+  src: url("../fonts/junction/junction-regular-webfont.eot") format("eot"),
+       url("../fonts/junction/junction-regular-webfont.woff") format("woff"),
+       url("../fonts/junction/junction-regular-webfont.ttf") format("truetype"),
+       url("../fonts/junction/junction-regular-webfont.svg") format("svg"),
+       url("../fonts/junction/junction-regular.ttf") format("truetype");
+}
+
+.junction { font-family: $font-junction; }
+
+@font-face {
+  font-family: "Junction-light";
+  src: url("../fonts/junction/junction-light-webfont.eot") format("eot"),
+       url("../fonts/junction/junction-light-webfont.woff") format("woff"),
+       url("../fonts/junction/junction-light-webfont.ttf") format("truetype"),
+       url("../fonts/junction/junction-light-webfont.svg") format("svg"),
+       url("../fonts/junction/junction-light.ttf") format("truetype");
+}
+
+.junction-light { font-family: $font-junction-light; }
