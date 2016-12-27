@@ -1,3 +1,18 @@
-.container.max-w600px
-  .h5 Github | Instagram
-  .font-smaller 2016 &copy; Kian Zhu
+.container.max-w600px.flex.justify-between
+  %h5.light-color
+    = link_to 'HOME',
+      'index',
+      class: 'mr1'
+    |
+    = link_to 'PROJECTS',
+      '#',
+      class: 'mr1 ml1'
+    |
+    = link_to 'GITHUB',
+      '#',
+      class: 'mr1 ml1'
+    |
+    = link_to 'INSTAGRAM',
+      '/instagram',
+      class: 'mr1 ml1'
+  %h5.light-color 2016 &copy; Kian Zhu

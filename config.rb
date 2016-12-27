@@ -8,6 +8,7 @@ set :images_dir, 'assets/images'
 ###
 # Page options, layouts, aliases and proxies
 ###
+activate :directory_indexes
 
 # Per-page layout changes:
 #
@@ -15,6 +16,9 @@ set :images_dir, 'assets/images'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+# With layout
+# page "/instagram.html", layout: "layout"
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -24,6 +28,8 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+
+activate :sprockets
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -42,6 +48,7 @@ end
 # end
 
 set :haml, { :ugly => true, :format => :html5 }
+
 
 # Build-specific configuration
 configure :build do

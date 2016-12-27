@@ -13,6 +13,8 @@
 @import "regular/margin";
 @import "regular/size";
 @import "regular/flex";
+@import "regular/type";
+@import "regular/link";
 
 
 
@@ -22,6 +24,21 @@
   border-radius: 2px;
 }
 
+#instafeed {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+#instafeed a {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+// #instafeed a img {
+//   width: 200px;
+//   height: 200px;
+// }
 
 
 // .welcome {

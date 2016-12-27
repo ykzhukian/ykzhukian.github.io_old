@@ -7,7 +7,7 @@ $font-junction-light: "Junction-light", helvetica, sans-serif;
 // ---------------- font size ------------------------
 $font-base:               1.6rem; // 16px
 $font-small:              $font-base * 0.875;   // 14px
-$font-smaller:            $font-base * 0.75;    // 12px
+$font-smaller:            $font-base * 0.65;    // 12px
 $font-large:              $font-base * 1.5;     // 24px
 $font-larger:             $font-base * 2.25;    // 36px
 $font-title:              $font-base * 3.375;   // 54px
@@ -26,3 +26,9 @@ $desktop:                 1024px;
 // ---------------- colors -----------------------------
 $main-color:              #fefefe;
 $bg-color:                #282828;
+$light-color:             #8e8e8e;
+
+/* Transition
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$text-transition:         color 0.2s ease-in-out 0s;
+$all-transition:          all 0.2s ease 0s;

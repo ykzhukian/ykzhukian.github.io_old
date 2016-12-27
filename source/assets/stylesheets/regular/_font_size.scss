@@ -40,14 +40,20 @@ h4,
   font-size: $font-base;
 
   @media screen and (max-width: $tablet) {
-    font-size: $font-base * 0.75;
+    font-size: $font-small;
   }
 }
 
 // 14px
 h5,
 small,
-.font-small   { font-size: $font-small; }
+.font-small   { 
+  font-size: $font-small; 
+
+  @media screen and (max-width: $tablet) {
+    font-size: $font-smaller;
+  }
+}
 
 // 10px
 h6,
