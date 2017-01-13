@@ -34,3 +34,15 @@
 }
 
 .junction-light { font-family: $font-junction-light; }
+
+/* ProximaNova
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+  font-family: "ProximaNova-light";
+  src: url("../fonts/proximanova/ProximaNova-Light.eot") format("eot"),
+       url("../fonts/proximanova/ProximaNova-Light.woff") format("woff"),
+       url("../fonts/proximanova/ProximaNova-Light.ttf") format("truetype"),
+       url("../fonts/proximanova/ProximaNova-Light.svg") format("svg");
+}
+
+.proximanova{ font-family: "ProximaNova-light"; }

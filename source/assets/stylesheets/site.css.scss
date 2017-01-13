@@ -18,22 +18,23 @@
 
 
 
+/* Items
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "items/popup";
+
+/* Reference
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
 .line {
   border-top: 1px solid $main-color;
   width: 100%;
   border-radius: 2px;
 }
 
-#instafeed {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
-#instafeed a {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
-}
+
 
 // #instafeed a img {
 //   width: 200px;
