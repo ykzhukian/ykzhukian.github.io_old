@@ -1,5 +1,5 @@
-.container.max-w600px.flex.justify-between
-  %p.font-base.light-color
+.standard-nav.container.max-w600px
+  .font-base.light-color
     = link_to 'HOME',
       'index',
       class: 'mr1'
@@ -22,5 +22,28 @@
       '',
       class: 'mr1 ml1',
       :target => '_blank'
+
+.mobile-nav.w100
+  #cross.m-auto.mb4
+  #mobile-nav-wrapper
+    .mobile-nav-box.font-base.light-color.flex.justify-between.flex-column.items-center
+      = link_to 'HOME',
+        'index',
+        class: ''
+      = link_to 'PROJECTS',
+        '/projects',
+        class: ''
+      = link_to 'GITHUB',
+        'https://github.com/ykzhukian',
+        class: '',
+        :target => '_blank'
+      = link_to 'INSTAGRAM',
+        'https://www.instagram.com/kianykz/',
+        class: '',
+        :target => '_blank'
+      = link_to 'MESSAGE',
+        '',
+        class: '',
+        :target => '_blank'
 .container.max-w600px
   %p.font-small.light-color 2017 &copy; Kian Zhu

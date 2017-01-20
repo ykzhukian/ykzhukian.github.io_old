@@ -12,3 +12,8 @@
 
 // });
 // feed.run();
+
+$( "#cross" ).on("click", function() {
+  $( "#cross" ).toggleClass( 'active' )
+  $( "#mobile-nav-wrapper" ).toggleClass( 'show' )
+});
