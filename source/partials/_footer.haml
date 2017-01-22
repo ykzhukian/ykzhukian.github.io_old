@@ -19,31 +19,26 @@
       :target => '_blank'
     |
     = link_to 'MESSAGE',
-      '',
+      '/message',
       class: 'mr1 ml1',
       :target => '_blank'
 
 .mobile-nav.w100
-  #cross.m-auto.mb4
+  #trigger.m-auto
+  #cross.m-auto.mb4.mt4
   #mobile-nav-wrapper
     .mobile-nav-box.font-base.light-color.flex.justify-between.flex-column.items-center
       = link_to 'HOME',
-        'index',
-        class: ''
+        'index'
       = link_to 'PROJECTS',
-        '/projects',
-        class: ''
+        '/projects'
       = link_to 'GITHUB',
         'https://github.com/ykzhukian',
-        class: '',
         :target => '_blank'
       = link_to 'INSTAGRAM',
         'https://www.instagram.com/kianykz/',
-        class: '',
         :target => '_blank'
       = link_to 'MESSAGE',
-        '',
-        class: '',
-        :target => '_blank'
+        '/message'
 .container.max-w600px
   %p.font-small.light-color 2017 &copy; Kian Zhu

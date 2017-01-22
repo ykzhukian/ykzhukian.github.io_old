@@ -24,7 +24,7 @@
 
 #cross {
   width: 15px;
-  height: 2px;
+  height: 50px;
 
   &:before {
     transition-duration: .5s;
@@ -89,4 +89,11 @@
     // transform: translate(0, 0);
     height: 250px;
   }
+}
+
+#trigger {
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  // background-color: red;
 }
