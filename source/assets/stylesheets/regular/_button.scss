@@ -1,0 +1,14 @@
+input[type="submit"] {
+  background-color: $bg-color;
+  border: 1px solid #ededed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $light-color;
+  cursor: pointer;
+  padding: 0 10px; 
+
+  &:hover {
+    border: 1px solid $light-color;
+    color: $main-color;
+  }
+}

@@ -1,0 +1,42 @@
+.message-form {
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ededed;
+    padding: 10px;
+
+    &::-webkit-input-placeholder {
+      color: $light-color;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $light-color;  
+    }
+
+    &:-ms-input-placeholder {  
+      color: $light-color;  
+    }
+
+    &:focus {
+      border: 1px solid $light-color;
+    }
+
+    &:hover {
+      border: 1px solid $light-color;
+      color: $main-color;
+    }
+  }
+
+
+  input {
+    height: 40px;
+    outline: none;
+  }
+
+  textarea {
+    height: 140px;
+    padding: 15px;
+    outline: none;
+    resize: vertical;
+  }
+}
