@@ -1,0 +1,35 @@
+%h3.note-title-bar#note-title.english WeChat Little Program Water Testing
+/ %h3.note-title-bar#note-title.chinese 微信小程序初探
+%p.english
+  It has been a while since the ‘Little Program’ on WeChat was put on the stage in the conference. I was in Brisbane when it happens, because of which I didn’t have a chance to test the water with a China bank account and a China mobile number. Up until now, I’m back here in Shanghai, having a good opportunity and spare time to get my hands dirty in this ‘Little Program’, though it is not as popular as it used to be.
+/ %p.chinese
+/   小程序刚发布的时候由于在国外，没有国内银行卡和手机号，实名认证不了就放弃了尝试。虽然现在那股的热潮已经过去大半了，但是还是想着玩玩看。
+%p.english
+  The framework used is easy to get started, I must say. It’s pretty much close to React, using custom components like <view>, <text> etc. However, based on my understanding, the program itself is a web app like product, which is running only in WeChat environment. Additional, WeChat removed most native functionality from ‘Little Program’ to allow higher performance. The limitation of package size is 1MB for each program, which provides faster installation process. As a result of all above, ‘Little Program’ has faster loading speed, which is its concept, on the contrary, nothing complicated can be developed, including games, live streaming.
+/ %p.chinese
+/   不得不说小程序的框架是上手最快的一个框架了。说是小程序，其实本质还是类似网页应用，还是只能在微信里用的网页应用。微信把这个框架简化得很厉害，很多WEB有的功能都被放弃了，应该是为了保证流畅和安全，太复杂就违背“触手可及”的原则了。
+%p.english
+  Let’s talk about the official IDE for ‘Little Program’. It’s elegant, clear, making perfect sense, but sometimes not quite stable. I came across several bugs when I was working on a small application (on a MacBook). It led me to re-starting the whole IDE around 5 times during the 3-hour development. The software didn’t crash itself but it logged errors which should never occur. After restarting the software, those errors would be gone without any other fixes. I couldn’t find any specific reason for that but it seems a relaunching is all it needs to be fixed.
+/ %p.chinese
+/   说说这个微信开发工具。简洁，清晰，美观，就是有时候不太稳定。遇到一些Bug，一共写了三个小时的东西大概重启了5次左右（不是自动重启，而是因为没有理由地报错，无法编译，我应该没有写错），还没有找到触发Bug的原因，不过每次重启都能解决问题。
+%p.english
+  It took me a while to make the decision for what should I build using this new and fresh (to me) technology. It came to two outcomes, a Douban Movie searching application based on their own API (https://developers.douban.com/wiki/?title=api_v2), an Idioms Dictionary using an API provided by Juhe Data (https://www.juhe.cn/docs/api/id/157).
+/ %p.chinese
+/   想了很久要做什么，因为只是试试手，不打算弄个服务器来了，就想找几个免费的API尝试一下。最后决定了两个，一个是豆瓣电影，接口用的是豆瓣的开放接口（https://developers.douban.com/wiki/?title=api_v2）。 另一个是成语词典的小程序，接口由聚合数据提供（https://www.juhe.cn/docs/api/id/157）。
+%p.english
+  I got myself started via a tutorial and the official document. It’s a React Native Framework without any packages, node (npm) or any other libs. In one word, it’s straight forward.
+/ %p.chinese
+/   看了一个快速入门的教程，翻了小程序的文档，感觉和React其实非常相似。就是像除去所有包和没有npm的React Native框架，而且是非常简化的。总之上手很快。
+.content-image
+  = image_tag  "../assets/images/douban.gif"
+  %p.english Douban Movie & Little Program IDE
+  / %p.chinese 豆瓣电影搜索 & 微信开发工具
+.flex.sm-flex-column.pt4
+  .content-image
+    = image_tag  "../assets/images/dic.gif"
+    %p.english Idioms Dictionary
+    / %p.chinese 成语词典
+  %p.pl6.english
+    Since I didn’t plan to code any back-end server side codes, an API is quite handful here. Thus, a dictionary using a third-party API was considered. 
+%p.pl6.english
+    After some practice as I talked about above, it's time to plan a more functional application using this framework. 

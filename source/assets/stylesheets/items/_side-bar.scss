@@ -1,0 +1,95 @@
+.sider-container {
+
+}
+
+.nav-wrapper {
+
+  .nav-item-wrapper {
+    width: 60px;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      width: 60px;
+      height: 3px;
+      border-radius: 5px;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      background-color: #eee;
+      left: 50%;
+      transform: translateX(-50%);
+      transition-duration: 0.3s;
+      @media screen and (max-width: 1024px) {
+        width: 40px;
+      } 
+    }
+
+    &.active, &:hover {
+
+      &:after {
+        width: 15px;
+        background-color: #666;
+        @media screen and (max-width: 1024px) {
+          width: 10px;
+        } 
+      }
+
+      .nav-item { 
+        transform: translate(0, 0) rotate(20deg);
+        @media screen and (max-width: 1024px) {
+          transform: translate(0, 25px) rotate(20deg);
+        } 
+      }
+    }
+  }
+
+  .nav-item {
+    transition-duration: 0.3s;
+    transform: translate(0, 40px) rotate(20deg);
+    @media screen and (max-width: 1024px) {
+      transform: translate(0, 45px) rotate(20deg);
+    } 
+    &:hover {
+      // transform: translate(0, 0) rotate(20deg); /* CSS3 */
+      // animation: navmove 2s linear alternate;
+      // /* Firefox: */
+      // -moz-animation: navmove 2s linear alternate;
+      // /* Safari 和 Chrome: */
+      // -webkit-animation: navmove 2s linear alternate;
+      // /* Opera: */
+      // -o-animation: navmove 2s linear alternate;
+    }
+  }
+
+  .nav-link {
+    .nav-img {
+      width: 50px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-34%);
+
+      @media screen and (max-width: 1024px) {
+        width: 30px;
+      }
+    }
+    svg {
+      fill: currentColor;
+      vertical-align: bottom;
+    }
+  }
+
+}
+
+@keyframes navmove {
+  0%   {
+    transform: translate(0, 30px) rotate(20deg); /* CSS3 */
+  }
+  10%  {
+    transform: translate(0, 0) rotate(20deg); /* CSS3 */
+  }
+  100% {
+    transform: translate(0, 0) rotate(20deg); /* CSS3 */
+  }
+}
