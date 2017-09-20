@@ -17,6 +17,15 @@ html {
   box-sizing: inherit;
 }
 
+::selection {
+  background: $light-color; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: $light-color; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+
 form {
   input, textarea {
     -webkit-appearance:none;

@@ -9,8 +9,8 @@
     = stylesheet_link_tag :site
     = favicon_tag 'favicon.ico'
   %body.flex.min-h100vh.flex-column.justify-center
-    .container.flex.justify-around.max-w1200px.sm-flex-column
-      .sider-container.pl10.pt8.md-px4.sm-px0.sm-order1.sm-pt0
+    .container.flex.justify-around.max-w1200px.flex-column
+      #sider-container.sider-container.md-px4.sm-px0.sm-order1.sm-pt0.pt18
         = partial 'partials/sider', :page => current_page.data.page
       .flex.flex-column.flex-grow.pr10.pl22.md-pl8.md-pr4.sm-p0.sm-pb4
         = yield

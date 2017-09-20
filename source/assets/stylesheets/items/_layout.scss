@@ -5,7 +5,14 @@
 }
 
 .nav-wrapper {
-  position: fixed;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
   @media screen and (max-width: 768px) { 
     position: relative;
   }
@@ -29,10 +36,9 @@
   // top: 0;
   background-color: $bg-color;
   width: 100%;
-}
-
-.note-archive-wrapper {
-
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
 
 .relative {

@@ -1,6 +1,8 @@
 /* Font Size
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+p {
+  margin: 0;
+}
 // 54px
 h1,
 .font-title   {
@@ -58,6 +60,66 @@ small,
 // 10px
 h6,
 .font-smaller { font-size: $font-smaller; }
+
+.letter-spacing {
+  letter-spacing: 1.1;
+}
+
+.highlightor {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  &:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -3px;
+    background-color: $light-color;
+    opacity: 0.3;
+    animation: linegrow 2.5s;
+  }
+  &:before {
+    content: '';
+    height: 16px;
+    width: 0;
+    max-width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -3px;
+    background-color: $light-color;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+      max-width: 1000px;
+    }
+    &:after { 
+      opacity: 0.1;
+    }
+  }
+}
+
+@keyframes linegrow {
+  0% {
+    max-width: 0;
+    width: 0;
+  }
+  50% {
+    max-width: 0;
+    width: 0;
+  }
+  100% {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
 
 // Responsive Typography
 @media screen and (max-width: $tablet) {

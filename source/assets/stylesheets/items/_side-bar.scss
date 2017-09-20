@@ -1,9 +1,62 @@
 .sider-container {
+  transition-duration: 0.3s;
+  &.active {
+    @media screen and (min-width: 768px) {
+      .nav-wrapper {
+        position: fixed;
+        max-width: 325px;
+        transform: none;
+        left: auto;
+        right: 60px;
+        padding: 0;
+        top: -7px;
 
+        .nav-item-wrapper { 
+          height: 55px;
+
+          &.active, &:hover {
+            &:after {
+              width: 7px;
+            }
+            .nav-item { 
+              animation: none;
+              transform: translate(0, 16px) rotate(20deg);
+            }
+          }
+          &:after {
+            width: 30px;
+            height: 2px;
+          }
+
+          .nav-item { 
+            animation: smalliconfall 2s;
+            transform: translate(0, 30px) rotate(20deg);
+            .nav-link {
+              .nav-img {
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+}
+
+@keyframes iconfall {
+  0% {transform: translate(0, 16px) rotate(20deg);}
+  20% {transform: translate(0, 16px) rotate(20deg);}
+  100% {transform: translate(0, 40px) rotate(20deg);}
+}
+
+@keyframes smalliconfall {
+  0% {transform: translate(0, 16px) rotate(20deg);}
+  20% {transform: translate(0, 16px) rotate(20deg);}
+  100% {transform: translate(0, 30px) rotate(20deg);}
 }
 
 .nav-wrapper {
-
+  transition-duration: 0.3s;
   .nav-item-wrapper {
     width: 60px;
     height: 70px;
@@ -27,20 +80,34 @@
     }
 
     &.active, &:hover {
-
+      
       &:after {
-        width: 15px;
+        width: 10px;
         background-color: #666;
         @media screen and (max-width: 1024px) {
-          width: 10px;
+          width: 7px;
         } 
       }
 
       .nav-item { 
-        transform: translate(0, 0) rotate(20deg);
+        animation: none;
+        transform: translate(0, 16px) rotate(20deg);
         @media screen and (max-width: 1024px) {
-          transform: translate(0, 25px) rotate(20deg);
+          transform: translate(0, 30px) rotate(20deg);
         } 
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 50px;
+      .nav-item { 
+        transform: translate(0, 25px) rotate(20deg);
+      }
+      &.active, &:hover {
+        .nav-item { 
+          animation: none;
+          transform: translate(0, 10px) rotate(20deg);
+        }
       }
     }
   }
@@ -48,24 +115,16 @@
   .nav-item {
     transition-duration: 0.3s;
     transform: translate(0, 40px) rotate(20deg);
+    animation: iconfall 1s;
     @media screen and (max-width: 1024px) {
       transform: translate(0, 45px) rotate(20deg);
+      animation: none;
     } 
-    &:hover {
-      // transform: translate(0, 0) rotate(20deg); /* CSS3 */
-      // animation: navmove 2s linear alternate;
-      // /* Firefox: */
-      // -moz-animation: navmove 2s linear alternate;
-      // /* Safari 和 Chrome: */
-      // -webkit-animation: navmove 2s linear alternate;
-      // /* Opera: */
-      // -o-animation: navmove 2s linear alternate;
-    }
   }
 
   .nav-link {
     .nav-img {
-      width: 50px;
+      width: 40px;
       position: absolute;
       left: 50%;
       transform: translateX(-34%);
