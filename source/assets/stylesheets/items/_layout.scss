@@ -33,12 +33,11 @@
 }
 
 .note-title-bar {
-  // top: 0;
   background-color: $bg-color;
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 .relative {

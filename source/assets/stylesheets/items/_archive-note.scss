@@ -1,0 +1,29 @@
+.note-card-wrapper {
+
+  padding: 20px;
+  cursor: pointer;
+
+  .note-card {
+  
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    // box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.15);
+    
+    .note-card__shadow-top {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0px -1px 2px 0px rgba(50, 50, 50, 0.15);
+      width: 100%;
+      height: 1px;
+      animation: horizongrow 3s;
+    }
+  }
+}
+
+@keyframes horizongrow {
+  0% {width: 0;}
+  50% {width: 80%;}
+  100% {width: 100%;}
+}
