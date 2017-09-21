@@ -38,6 +38,11 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 999;
+
+  .note-nav-arrow {
+    width: 20px;
+  }
 }
 
 .relative {

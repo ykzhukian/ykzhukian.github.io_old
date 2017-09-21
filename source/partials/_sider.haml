@@ -3,9 +3,9 @@
     .nav-item
       %a{:href => "/", :class => "nav-link"} 
         = image_tag  "../assets/images/soda_grey.svg", :class => "nav-img"
-  .nav-item-wrapper.mb6.sm-mb0.md-mb3#nav-link-code.sm-mx4{class: ('active' if current_page.data.page == "code")}
+  .nav-item-wrapper.mb6.sm-mb0.md-mb3#nav-link-code.sm-mx4{class: ('active' if current_page.data.page == "notes")}
     .nav-item
-      %a{:href => "/code", :class => "nav-link"} 
+      %a{:href => "/notes", :class => "nav-link"} 
         = image_tag  "../assets/images/keyboard_grey.svg", :class => "nav-img"
   .nav-item-wrapper.mb6.sm-mb0.md-mb3#nav-link-pin.sm-mx4{class: ('active' if current_page.data.page == "pin")}
     .nav-item

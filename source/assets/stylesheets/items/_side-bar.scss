@@ -1,13 +1,14 @@
 .sider-container {
   transition-duration: 0.3s;
   &.active {
+    position: relative;
     @media screen and (min-width: 768px) {
       .nav-wrapper {
         position: fixed;
         max-width: 325px;
         transform: none;
         left: auto;
-        right: 60px;
+        right: 10px;
         padding: 0;
         top: -7px;
 
