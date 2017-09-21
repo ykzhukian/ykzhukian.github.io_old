@@ -581,6 +581,9 @@ html {
   /* WebKit/Blink Browsers */
   color: #fff; }
 
+::-webkit-scrollbar {
+  width: 0 !important; }
+
 form input, form textarea {
   -webkit-appearance: none; }
 
