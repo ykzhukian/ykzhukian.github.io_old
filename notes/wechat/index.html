@@ -4,15 +4,15 @@
 <meta charset='utf-8'>
 <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
 <!-- Use title if it's in the page YAML frontmatter -->
-<title>Kian Zhu | CODES</title>
+<title>Kian Zhu | NOTES</title>
 <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 <link href="/assets/stylesheets/site.css" rel="stylesheet" />
 <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body class='flex min-h100vh flex-column justify-center'>
-<div class='container flex justify-around max-w1200px sm-flex-column'>
-<div class='sider-container pl10 pt8 md-px4 sm-px0 sm-order1 sm-pt0'>
-<div class='nav-wrapper flex flex-column justify-center sm-flex-row'>
+<div class='container flex justify-around max-w1200px flex-column'>
+<div class='sider-container md-px4 sm-px0 sm-order1 sm-pt0 pt18' id='sider-container'>
+<div class='nav-wrapper flex justify-around sm-flex-row'>
 <div class='nav-item-wrapper mb6 sm-mb0 md-mb3 sm-mx4' id='nav-link-intro'>
 <div class='nav-item'>
 <a class='nav-link' href='/'>
@@ -22,7 +22,7 @@
 </div>
 <div class='active mb6 md-mb3 nav-item-wrapper sm-mb0 sm-mx4' id='nav-link-code'>
 <div class='nav-item'>
-<a class='nav-link' href='/code'>
+<a class='nav-link' href='/notes'>
 <img src="/assets/images/keyboard_grey.svg" class="nav-img" alt="Keyboard grey" />
 </a>
 </div>
@@ -44,10 +44,11 @@
 </div>
 
 </div>
-<div class='flex flex-column flex-grow pr10 pl22 md-pl8 md-pr4 sm-p0 sm-pb4'>
-<div class='container relative'>
-<div class='note-archive-wrapper'>
-<div class='note-wrapper'><h3 class='note-title-bar' id='note-title'>WeChat Little Program Water Testing</h3>
+<div class='flex flex-column flex-grow px10 md-px4 sm-p0 sm-pb4'>
+<h3 class='note-title-bar'>
+WeChat Little Program Water Testing
+<a class='note-nav-back ml8' href='/notes'>BACK</a>
+</h3>
 <i>
 <b>WeChat's Mini Programs Dev Tool | JS | WeChat's Programming language</b>
 </i>
@@ -63,14 +64,14 @@ Let’s talk about the official IDE for ‘Little Program’. It’s elegant, cl
 <p>
 It took me a while to make the decision for what should I build using this new and fresh (to me) technology. It came to two outcomes, a Douban Movie searching application based on their own API (https://developers.douban.com/wiki/?title=api_v2), an Idioms Dictionary using an API provided by Juhe Data (https://www.juhe.cn/docs/api/id/157).
 </p>
-<p>
-I got myself started via a tutorial and the official document. It’s a React Native Framework without any packages, node (npm) or any other libs. In one word, it’s straight forward.
-</p>
 <div class='content-image'>
 <img src="/assets/images/douban.gif" alt="Douban" />
 <p>Douban Movie & Little Program IDE</p>
 </div>
-<div class='flex sm-flex-column pt4'>
+<p>
+I got myself started via a tutorial and the official document. It’s a React Native Framework without any packages, node (npm) or any other libs. In one word, it’s straight forward.
+</p>
+<div class='flex sm-flex-column pt4 px12'>
 <div class='content-image'>
 <img src="/assets/images/dic.gif" alt="Dic" />
 <p>Idioms Dictionary</p>
@@ -78,33 +79,6 @@ I got myself started via a tutorial and the official document. It’s a React Na
 <p class='pl6'>
 Since I didn’t plan to code any back-end server side codes, an API is quite handful here. Thus, a dictionary using a third-party API was considered.
 </p>
-</div>
-<p>
-After some practice as I talked about above, it's time to plan a more functional application using this framework.
-</p>
-</div>
-<div class='note-wrapper'><h3 class='note-title-bar' id='note-title-2'>Balance</h3>
-<p>
-Balance is an application taking care of everyday expenditure and income.
-</p>
-<p>
-Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-</p>
-<p>
-Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada. Proin eget tortor risus.
-</p>
-<p>
-Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-</p>
-<p><a href="http://balancebook.herokuapp.com/users/sign_in" target="_blank">link to application</a></p>
-</div>
-<div class='note-wrapper'><h3>Moments</h3>
-<p class='english'>
-Moments is a light blog application sharing the photos and smiles in a votable and commentable way.
-</p>
-<p><a href="http://themoments.herokuapp.com/" target="_blank">link to application</a></p>
-</div>
-</div>
 </div>
 
 <div class='container'>

@@ -10,9 +10,9 @@
 <link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body class='flex min-h100vh flex-column justify-center'>
-<div class='container flex justify-around max-w1200px sm-flex-column'>
-<div class='sider-container pl10 pt8 md-px4 sm-px0 sm-order1 sm-pt0'>
-<div class='nav-wrapper flex flex-column justify-center sm-flex-row'>
+<div class='container flex justify-around max-w1200px flex-column'>
+<div class='sider-container md-px4 sm-px0 sm-order1 sm-pt0 pt18' id='sider-container'>
+<div class='nav-wrapper flex justify-around sm-flex-row'>
 <div class='nav-item-wrapper mb6 sm-mb0 md-mb3 sm-mx4' id='nav-link-intro'>
 <div class='nav-item'>
 <a class='nav-link' href='/'>
@@ -22,7 +22,7 @@
 </div>
 <div class='nav-item-wrapper mb6 sm-mb0 md-mb3 sm-mx4' id='nav-link-code'>
 <div class='nav-item'>
-<a class='nav-link' href='/code'>
+<a class='nav-link' href='/notes'>
 <img src="/assets/images/keyboard_grey.svg" class="nav-img" alt="Keyboard grey" />
 </a>
 </div>
@@ -44,12 +44,12 @@
 </div>
 
 </div>
-<div class='flex flex-column flex-grow pr10 pl22 md-pl8 md-pr4 sm-p0 sm-pb4'>
+<div class='flex flex-column flex-grow px10 md-px4 sm-p0 sm-pb4'>
 <div class='container'>
-<p class='font-large'>
+<h2 class='mb0'>
 Send Me A Message
-</p>
-<form action='https://formspree.io/kianzyk@gmail.com' class='message-form' method='POST'>
+</h2>
+<form action='https://formspree.io/kianzyk@gmail.com' class='message-form junction' method='POST'>
 <input name='name' placeholder='Your name please' required='' type='text'>
 <input name='_replyto' placeholder='Your email please' required='' type='email'>
 <textarea name='message'></textarea>
