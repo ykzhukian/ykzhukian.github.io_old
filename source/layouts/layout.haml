@@ -10,7 +10,7 @@
     = favicon_tag 'favicon.ico'
   %body.flex.min-h100vh.flex-column.justify-center
     .container.flex.justify-around.max-w1200px.flex-column
-      #sider-container.sider-container.md-px4.sm-px0.sm-order1.sm-pt0.pt18
+      #sider-container.sider-container.md-px4.sm-px0.sm-order1.sm-pt0.pt18{class: ('hide' if current_page.data.page == "thanks")}
         = partial 'partials/sider', :page => current_page.data.page
       .flex.flex-column.flex-grow.px10.md-px4.sm-p0.sm-pb4
         = yield
