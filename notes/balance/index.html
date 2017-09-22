@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta charset='utf-8'>
+<meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+<!-- Use title if it's in the page YAML frontmatter -->
+<title>Kian Zhu | NOTES</title>
+<link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href="/assets/stylesheets/site.css" rel="stylesheet" />
+<link href="/assets/images/favicon.ico" rel="icon" type="image/ico" />
+</head>
+<body class='flex min-h100vh flex-column justify-center'>
+<div class='container flex justify-around max-w1200px flex-column'>
+<div class='sider-container md-px4 sm-px0 sm-order1 sm-pt0 pt18' id='sider-container'>
+<div class='nav-wrapper flex justify-around sm-flex-row'>
+<div class='nav-item-wrapper mb6 sm-mb0 md-mb3 sm-mx4' id='nav-link-intro'>
+<div class='nav-item'>
+<a class='nav-link' href='/'>
+<img src="/assets/images/soda_grey.svg" class="nav-img" alt="Soda grey" />
+</a>
+</div>
+</div>
+<div class='active mb6 md-mb3 nav-item-wrapper sm-mb0 sm-mx4' id='nav-link-code'>
+<div class='nav-item'>
+<a class='nav-link' href='/notes'>
+<img src="/assets/images/keyboard_grey.svg" class="nav-img" alt="Keyboard grey" />
+</a>
+</div>
+</div>
+<div class='nav-item-wrapper mb6 sm-mb0 md-mb3 sm-mx4' id='nav-link-pin'>
+<div class='nav-item'>
+<a class='nav-link' href='#'>
+<img src="/assets/images/pin_grey.svg" class="nav-img" alt="Pin grey" />
+</a>
+</div>
+</div>
+<div class='nav-item-wrapper sm-mx4' id='nav-link-mail'>
+<div class='nav-item'>
+<a class='nav-link' href='/message'>
+<img src="/assets/images/mail_grey.svg" class="nav-img" alt="Mail grey" />
+</a>
+</div>
+</div>
+</div>
+
+</div>
+<div class='flex flex-column flex-grow px10 md-px4 sm-p0 sm-pb4'>
+<h3 class='note-title-bar'>
+Balance
+<a class='note-nav-back ml8 sm-ml2' href='/notes'>BACK</a>
+</h3>
+<i>
+<b>an application taking care of everyday expenditure and income</b>
+</i>
+<i class='py1'>
+<b>Ruby on Rails | Heroku | Ai.api | SQLite | Travis</b>
+</i>
+<p>
+That was my first time coding with Ruby on Rails. After being graduated from QUT (Queensland University of Technoloy), I started getting my hands dirty on the popular frameworks out there. What we learned in uni was quite basic. We can code easily to meet the assignments requirements but people are not using those simple products in the real life. Thus, the next stage after graduating for myself is learning to use these frameworks and libraries. As a MVC framework, the core part of RoR is CRUD. Also, it’s a good point for me to get started.
+</p>
+<p>
+Because of some reasons above and I trying to make it useful for myself, I decided to build an accounting application to basically record the daily expenditure and income, which also can be used to review the histories statistically. That is Balance.
+</p>
+<p>
+Heroku is one of the most popular deploy platforms for RoR, which was used for this application, along with SQLite and Travis. One is for database management, one is for testing before deploying. The main reason is actually that I wanted to learn how it works in a workplace to deal with an web application from developing to publishing.
+</p>
+<p>
+I didn’t work much on front end, which was mostly developed by
+<a class='junction highlightor mr0' href='http://lennonzf.com' target='_blank'>Lennon.</a>
+The back-end part is what I learned and researched.
+</p>
+<p>
+The most surprising part of RoR to me is the plenty of gems I can install and just use it in the project. I’m probably making a too big deal about this, but it was my first time touching a package-based programming system. Instead of creating classes and implementing every function myself by PHP, this was so straight forward.
+</p>
+<p>
+The user system is the first thing to consider.
+<a class='junction highlightor mr0' href='https://github.com/plataformatec/devise' target='_blank'>Devise</a>
+was used to manage the authentication system. Everything was as smooth as it could be under RoR framework. Also, I’m using paperclip for user avatar storing (not linked to any cloud storage due to the budget).
+</p>
+<div class='content-image'>
+<img src="/assets/images/balance_gif_1.gif" alt="Balance gif 1" />
+</div>
+<p class='mt2'>
+So, CRUD includes books for different activities, categories for different kinds of expenditures and items for each specific payment. In fact, these has been done mostly by RoR and what’s left is defining the names, resources and routes of every item, which is quite easy.
+</p>
+<p>
+Querying from the database is what to do next. It was a bit confused because of some difference between SQLite and Postgres. I’m using SQLite for developing and Postgres for production since heroku doesn’t appear to like the previous one.
+</p>
+<div class='content-image'>
+<img src="/assets/images/balance_gif_2.gif" alt="Balance gif 2" />
+</div>
+<p class='mt2'>
+Statistic review is one way to practice using queries with SQLite.
+</p>
+<div class='content-image'>
+<img src="/assets/images/balance_gif_3.gif" alt="Balance gif 3" />
+</div>
+<p class='mt2'>
+Overall, this is a simple application based on Ruby on Rails. It was a self-learning project but also a product used by myself.
+</p>
+<p>
+After several months since it has been built, I heard about Google’s Api.ai. I decided to add a api interface to this application to enable a faster and more effective way of recording an expenditure.
+</p>
+<div class='content-image m-auto'>
+<img src="/assets/images/api_ai.jpeg" class="w32" alt="Api ai" />
+</div>
+
+<div class='container'>
+<p class='font-small light-color sm-hide'>2017 &copy; Kian Zhu</p>
+</div>
+
+</div>
+</div>
+</body>
+<script src="/assets/javascripts/all.js"></script>
+</html>

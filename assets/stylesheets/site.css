@@ -6566,6 +6566,15 @@ input[type="submit"] {
       width: 99%;
       height: 1px;
       animation: horizongrow 4s; }
+    @media screen and (max-width: 768px) {
+      .note-card-wrapper .note-card .note-card__title {
+        font-size: 20px; } }
+    .note-card-wrapper .note-card .note-card__sub {
+      font-size: 16px; }
+      @media screen and (max-width: 768px) {
+        .note-card-wrapper .note-card .note-card__sub {
+          padding-bottom: 15px;
+          font-size: 13px; } }
     .note-card-wrapper .note-card:before {
       content: '';
       width: 100%;
