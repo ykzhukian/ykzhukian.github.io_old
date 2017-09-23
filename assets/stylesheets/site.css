@@ -6335,9 +6335,9 @@ input[type="submit"] {
 
 .sider-container {
   transition-duration: 0.3s; }
-  .sider-container.active {
-    position: relative; }
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
+    .sider-container.active {
+      position: relative; }
       .sider-container.active .nav-wrapper {
         position: fixed;
         max-width: 325px;
