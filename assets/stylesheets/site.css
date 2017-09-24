@@ -398,6 +398,14 @@ textarea {
 @font-face {
   font-family: "ProximaNova-light";
   src: url("../fonts/proximanova/ProximaNova-Light.eot") format("eot"), url("../fonts/proximanova/ProximaNova-Light.woff") format("woff"), url("../fonts/proximanova/ProximaNova-Light.ttf") format("truetype"), url("../fonts/proximanova/ProximaNova-Light.svg") format("svg"); }
+@font-face {
+  font-family: 'courierregular';
+  src: url("../fonts/courier/courier-webfont.woff2") format("woff2"), url("../fonts/courier/courier-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.courier {
+  font-family: "courierregular", helvetica, sans-serif; }
+
 .proximanova {
   font-family: "ProximaNova-light"; }
 
@@ -457,6 +465,11 @@ h6,
 
 .letter-spacing {
   letter-spacing: 1.1; }
+
+.codes {
+  padding: 0 2px;
+  font-weight: 600;
+  font-family: "courierregular", helvetica, sans-serif; }
 
 .highlightor {
   position: relative;
@@ -625,6 +638,9 @@ p {
 
 .black-color {
   color: black; }
+
+.main-color {
+  color: #282828; }
 
 /* Reponsive Mixin
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
